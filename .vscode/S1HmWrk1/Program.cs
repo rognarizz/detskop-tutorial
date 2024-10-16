@@ -1,26 +1,35 @@
 using System;
-
-class Program
+using Internal;
+public class Answer
 {
-    static void Main()
+    static void CheckDivisibility(int firstNumber, int secondNumber)
     {
-        int[,] array = {
-            { 1, 3, 5, 7 },
-            { 2, 4, 6, 8 },
-            { 9, 10, 11, 12 }
-        };
-
-        for (int i = 0; i < array.GetLength(0); i++)
+        if (secondNumber == 0)
         {
-            int max = array[i, 0];
-            for (int j = 1; j < array.GetLength(1); j++)
-            {
-                if (array[i, j] > max)
-                {
-                    max = array[i, j];
-                }
-            }
-            Console.WriteLine($"Максимальный элемент в строке {i}: {max}");
+            Console.WriteLine("На ноль делить нельзя");
+        }
+        else if (firstNumber % secondNumber == 0)
+        {
+            Console.WriteLine("делится");
+        }
+        else
+        {
+            Console.WriteLine("не делится");
         }
     }
-}
+        static public void Main(string[] args)
+        {
+            int firstNumber, secondNumber;
+            if (args.Length >= 2)
+            {
+                firstNumber = int.Parse(args[0]);
+                secondNumber = int.Parse(args[1]);
+            }
+            else
+            {
+                firstNumber = 10;
+                secondNumber = 2;
+            }
+            CheckDivisibility(firstNumber, secondNumber);
+        }
+    }
