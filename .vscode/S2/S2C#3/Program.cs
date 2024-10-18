@@ -12,10 +12,10 @@ if (twoDigitnum >= 10 && twoDigitnum <= 99)
     }
     else
     {
-    Console.WriteLine(secondDigit);
-    }  
+        Console.WriteLine(secondDigit);
+    }
 
-    
+
 }
 else
 {
