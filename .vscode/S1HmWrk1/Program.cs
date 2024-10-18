@@ -1,5 +1,4 @@
-using System;
-using Internal;
+
 public class Answer
 {
     static void CheckDivisibility(int firstNumber, int secondNumber)
@@ -28,7 +27,7 @@ public class Answer
             else
             {
                 firstNumber = 10;
-                secondNumber = 2;
+                secondNumber = 13;
             }
             CheckDivisibility(firstNumber, secondNumber);
         }
