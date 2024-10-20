@@ -1,6 +1,8 @@
 Console.WriteLine("Input ten integer numbers separated by spaces: ");
+
 string input = Console.ReadLine(); // Считываем введенную строку и сохраняем её в переменной input
 string[] numbers = input.Split(' '); // разделения строки input на массив строк, где каждая строка представляет собой одно число
+
 int[] arr = new int[10]; // Создаем массив arr из десяти элементов типа int
 int count = 0;
 
