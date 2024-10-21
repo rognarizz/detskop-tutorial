@@ -19,10 +19,10 @@ class Program
             return arrValue;
         }
 
-        int[] arr = Convert_ToInt(input);
+        int[] arr = Convert_ToInt(input); // вызов функции Convert_ToInt и присваивание значений массиву arr
 
-        Array.Sort(arr);
-        Array.Reverse(arr);
+        Array.Sort(arr); // сортировка числе по возрастанию
+        Array.Reverse(arr); // меняет его порядок на убывающий
 
         Console.WriteLine("Your sorted integers: [" + string.Join (", ", arr) + "]");
     }
