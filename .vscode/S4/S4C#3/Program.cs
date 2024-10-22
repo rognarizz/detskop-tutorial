@@ -5,11 +5,12 @@ class Program
 {
     static void Main()
     {
-        
+        // Решение задачи с простым массивом
         // int[] simpleValue = {1, 3, 5, 6, 7, 8};
         // Array.Reverse(simpleValue);
         // Console.WriteLine("Your sorted integers: [" + string.Join (", ", simpleValue) + "]");
 
+        //Решение задачи с вводом данных
         Console.WriteLine("Input your integer numbers: ");
         string input = Console.ReadLine();
 
